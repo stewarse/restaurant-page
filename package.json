@@ -1,0 +1,24 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "Restaurant Page that dynamically pulls html from various .js files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stewarse/restaurant-page.git"
+  },
+  "author": "Sean Stewart",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stewarse/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/stewarse/restaurant-page#readme",
+  "devDependencies": {
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
