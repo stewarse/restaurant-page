@@ -1,1 +1,1 @@
-console.log("I'm an alert, in the console!");
+(()=>{"use strict";const e=document.getElementById("content");document.body.appendChild(function(){const t=document.createElement("h1");t.textContent="Bears, Burgers & Brews";const n=document.createElement("p");n.textContent="Welcome to our restaurant! Enjoy our delicious burgers and massive Tap List served to you by...BEARS!";const o=document.createElement("img");o.src="/src/bear-beer.jpg",o.alt="sitting bear drinking a beer",e.appendChild(t),e.appendChild(n),e.appendChild(o)}())})();
