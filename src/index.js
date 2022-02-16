@@ -1,3 +1,5 @@
-// import MyImage from './bear-beer.jpg';
+import component from "./page_load.js"
 
-console.log("I'm an alert, in the console!")
+// cosnole.log("I'm an alert, in the console!")
+
+document.body.appendChild(component());
