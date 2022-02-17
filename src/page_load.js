@@ -1,3 +1,4 @@
+// import CONTENT from "./index.js"
 const CONTENT = document.getElementById('content')
 
 export default function component() {
