@@ -2,6 +2,8 @@
 const CONTENT = document.getElementById('content')
 
 export default function menu() {
+    const menuContainer = document.createElement('div')
+    
     const title = document.createElement('h1')
     title.textContent = 'Menu'
     
@@ -26,6 +28,7 @@ export default function menu() {
 
     title.appendChild(beverages)
 
-    CONTENT.appendChild(title)
-
+    menuContainer.appendChild(title)
+    
+    return menuContainer
 }

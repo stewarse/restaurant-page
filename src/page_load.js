@@ -1,20 +1,25 @@
 // import CONTENT from "./index.js"
-const CONTENT = document.getElementById('content')
+//const CONTENT = document.getElementById('content')
 
 export default function component() {
+    const container = document.createElement('div')
+    container.style.backgroundColor = 'LightGray'
+
     const pageTitle = document.createElement('h1')
     pageTitle.textContent = 'Bears, Burgers & Brews'
 
     const description = document.createElement('p')
-    description.textContent = 'Welcome to our restaurant! Enjoy our delicious burgers and massive Tap List served to you by...BEARS!'
+    description.textContent = 'Welcome to our poop house! Enjoy our delicious burgers and massive Tap List served to you by...BEARS!'
 
     const image = document.createElement('img')
     image.src = "/src/bear-beer.jpg" 
     image.alt= "sitting bear drinking a beer"
 
-    CONTENT.appendChild(pageTitle)
-    CONTENT.appendChild(description)
-    CONTENT.appendChild(image)
+    container.appendChild(pageTitle)
+    container.appendChild(description)
+    container.appendChild(image)
+    
+    return container
 }
 
 

@@ -1,7 +1,18 @@
-import component from "./page_load.js"
+import pageLoad from "./page_load.js"
+import { header, nav } from "./header.js"
 import menu from "./menu.js"
+import './style.css'
 
-// export const CONTENT = document.getElementById('content')
+
+
+const content = document.getElementById('content')
+
 // cosnole.log("I'm an alert, in the console!")
 
-document.body.appendChild(menu());
+content.appendChild(header())
+
+// header();
+//nav();
+let currentTab = menu
+
+content.appendChild(currentTab())
