@@ -1,11 +1,22 @@
-body {
-  background: url("./background.jpg");
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
-header {
+.nav-content {
+  padding: 25px 25px;
+  font-size: 24px;
 }
 
 main {
+  background: url("./background.jpg");
+  height: 100%;
 }
 
 h2 {

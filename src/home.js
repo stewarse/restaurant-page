@@ -2,8 +2,7 @@
 //const CONTENT = document.getElementById('content')
 
 export default function component() {
-    const container = document.createElement('div')
-    container.style.backgroundColor = 'LightGray'
+    const container = document.createElement('main')
 
     const pageTitle = document.createElement('h1')
     pageTitle.textContent = 'Bears, Burgers & Brews'

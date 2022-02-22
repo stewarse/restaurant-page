@@ -2,7 +2,7 @@
 const CONTENT = document.getElementById('content')
 
 export default function menu() {
-    const menuContainer = document.createElement('div')
+    const menuContainer = document.createElement('main')
     
     const title = document.createElement('h1')
     title.textContent = 'Menu'
