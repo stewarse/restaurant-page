@@ -21,9 +21,9 @@ function updateDisplay(e) {
     let pageToLoad = e.target.id;
     
     switch (pageToLoad) {
-        case "menu": content.appendChild(menu());
-        break;
         case "home": content.appendChild(home());
+        break;
+        case "menu": content.appendChild(menu());
         break;
         case "contact": content.appendChild(contact());
         break;
@@ -44,5 +44,5 @@ function clearDisplay() {
     }
 }
 
-content.appendChild(home())
+content.appendChild(contact())
 content.appendChild(footer())

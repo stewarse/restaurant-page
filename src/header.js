@@ -1,7 +1,6 @@
 
 export function header() {
     const header = document.createElement('header')
-    header.style.backgroundColor = 'red'
 
     const nav = document.createElement('nav')
 

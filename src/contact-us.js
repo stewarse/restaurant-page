@@ -20,24 +20,32 @@ export default function contact() {
     
     const nameInput = document.createElement('input')
     nameInput.type = "text"
+    nameInput.placeholder = "Your Name"
+
     const nameLabel = document.createElement('label')
     nameLabel.setAttribute("for", "name-input")
     nameLabel.textContent = "Name"
 
     const emailInput = document.createElement('input')
     emailInput.type = 'text'
+    emailInput.placeholder = 'Your Email Address'
+
     const emailLabel = document.createElement('label')
     emailLabel.setAttribute('for','emailInput')
     emailLabel.textContent = 'Email'
 
     const phoneNumberInput = document.createElement('input')
     phoneNumberInput.type = 'text'
+    phoneNumberInput.placeholder = 'Your Phone Number'
+
     const phoneNumberLabel = document.createElement('label')
     phoneNumberLabel.setAttribute('for','phoneNumberInput')
     phoneNumberLabel.textContent = 'Phone Number'
 
     const messageInput = document.createElement('input')
     messageInput.type = 'text'
+    messageInput.placeholder = 'Your Message'
+
     const messageLabel = document.createElement('label')
     messageLabel.setAttribute('for','messageInput')
     messageLabel.textContent = 'Message'
@@ -50,14 +58,18 @@ export default function contact() {
     contactDescription.appendChild(contactPhoneNumber)
     contactDiv.appendChild(contactDescription)
 
-    form.appendChild(nameLabel)
     form.appendChild(nameInput)
-    form.appendChild(emailLabel)
+    form.appendChild(nameLabel)
+
     form.appendChild(emailInput)
-    form.appendChild(phoneNumberLabel)
+    form.appendChild(emailLabel)
+
     form.appendChild(phoneNumberInput)
-    form.appendChild(messageLabel)
+    form.appendChild(phoneNumberLabel)
+
     form.appendChild(messageInput)
+    form.appendChild(messageLabel)
+
     form.appendChild(btn)
 
     container.appendChild(contactDiv)
