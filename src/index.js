@@ -3,6 +3,7 @@ import { header, nav } from "./header.js"
 import menu from "./menu.js"
 import './style.css'
 import contact from "./contact-us.js"
+import footer from "./footer.js"
 
 const content = document.getElementById('content')
 
@@ -27,6 +28,8 @@ function updateDisplay(e) {
         case "contact": content.appendChild(contact());
         break;
     }
+
+    content.appendChild(footer())
 }
 
 function clearDisplay() {
@@ -34,7 +37,12 @@ function clearDisplay() {
     while(main.firstChild) {
         main.removeChild(main.lastChild)
     }
-    main.parentElement.removeChild(main)
+
+    while(content.childNodes.length > 1){
+        console.log(content.childNodes.length)
+        content.removeChild(content.lastChild)
+    }
 }
 
 content.appendChild(home())
+content.appendChild(footer())

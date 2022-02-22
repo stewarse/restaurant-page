@@ -2,11 +2,19 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+  height: 10vh;
 }
 
 .nav-content {
@@ -16,7 +24,44 @@ nav {
 
 main {
   background: url("./background.jpg");
-  height: 100%;
+  padding-bottom: 20px;
+}
+
+#contact-header-div {
+  width: 60vh;
+  margin: 0 auto;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+#contact-title {
+  width: max-content;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-size: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40vh;
+  margin: 0px auto;
+  padding-top: 10vh;
+}
+
+input {
+  margin-bottom: 25px;
+  height: 2em;
+  font-size: 1.5em;
+}
+
+button {
+  width: 85px;
+  height: 40px;
+  margin: 0 auto;
+  font-size: 20px;
 }
 
 h2 {
@@ -25,4 +70,18 @@ h2 {
 
 h3 {
   color: blue;
+}
+
+footer {
+  display: block;
+  position: relative;
+  height: 8vh;
+}
+
+footer a {
+  position: absolute;
+  width: 425px;
+  margin: 20px 0;
+  left: 50%;
+  transform: translate(-212.5px);
 }
