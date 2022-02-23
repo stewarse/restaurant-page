@@ -2,7 +2,7 @@ const path = require('path');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    // mode: 'development',
+    mode: 'development',
     entry: {
         index: './src/index.js',
     },
@@ -25,6 +25,14 @@ module.exports = {
             {   
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
+            },
+            {
+                test: /\.csv$/i,
+                use: ['csv-loader'],
+            },
+            {
+                test: /\.xml$/i,
+                use: ['xml-loader'],
             },
         ],
     },

@@ -1,12 +1,12 @@
 import home from "./home.js"
-import { header, nav } from "./header.js"
+import { header } from "./header.js"
 import menu from "./menu.js"
 import './style.css'
 import contact from "./contact-us.js"
 import footer from "./footer.js"
 
 const content = document.getElementById('content')
-let pageToLoad = "menu"
+let pageToLoad = "home"
 
 content.appendChild(header())
 
@@ -41,7 +41,6 @@ function clearDisplay() {
     }
 
     while(content.childNodes.length > 1){
-        console.log(content.childNodes.length)
         content.removeChild(content.lastChild)
     }
 }
