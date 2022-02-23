@@ -1,9 +1,7 @@
-// import CONTENT from "./index.js"
-//const CONTENT = document.getElementById('content')
+import image from './homeImage.jpg'
 
 export default function component() {
     const container = document.createElement('main')
-    // container.style.height = "79.5vh"
 
     const pageTitle = document.createElement('h1')
     pageTitle.textContent = 'Bears, Burgers & Brews'
@@ -19,8 +17,8 @@ export default function component() {
     description.style.lineHeight = '1.5'
     description.style.fontSize = '18px'
 
-    const image = document.createElement('img')
-    image.src = "/src/homeImage.jpg" 
+    const myImage = new Image()
+    image.src = image
     image.alt = "bartender pouring a beer"
     image.style.maxHeight = '600px'
     image.style.maxWidth = '900px'
@@ -32,7 +30,7 @@ export default function component() {
 
     container.appendChild(pageTitle)
     container.appendChild(description)
-    container.appendChild(image)
+    container.appendChild(myImage)
     
     return container
 }
