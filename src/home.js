@@ -18,14 +18,14 @@ export default function component() {
     description.style.fontSize = '18px'
 
     const myImage = new Image()
-    image.src = image
-    image.alt = "bartender pouring a beer"
-    image.style.maxHeight = '600px'
-    image.style.maxWidth = '900px'
-    image.style.height = '80%'
-    image.style.width = '80%'
-    image.style.margin = '30px auto'
-    image.style.display = 'block'
+    myImage.src = image
+    myImage.alt = "bartender pouring a beer"
+    myImage.style.maxHeight = '600px'
+    myImage.style.maxWidth = '900px'
+    myImage.style.height = '80%'
+    myImage.style.width = '80%'
+    myImage.style.margin = '30px auto'
+    myImage.style.display = 'block'
 
 
     container.appendChild(pageTitle)
