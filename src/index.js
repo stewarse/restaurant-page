@@ -6,20 +6,21 @@ import contact from "./contact-us.js"
 import footer from "./footer.js"
 
 const content = document.getElementById('content')
+let pageToLoad = "menu"
 
 content.appendChild(header())
 
 const navItems = document.querySelectorAll('.nav-content')
 
 navItems.forEach((el) => el.addEventListener('click', updateDisplay))
-//navItems.forEach(el => console.log(el))
-
 
 function updateDisplay(e) {
-    clearDisplay()
+    if(e){
+        clearDisplay()
 
-    let pageToLoad = e.target.id;
-    
+        pageToLoad = e.target.id;
+    }
+
     switch (pageToLoad) {
         case "home": content.appendChild(home());
         break;
@@ -30,6 +31,7 @@ function updateDisplay(e) {
     }
 
     content.appendChild(footer())
+
 }
 
 function clearDisplay() {
@@ -44,5 +46,4 @@ function clearDisplay() {
     }
 }
 
-content.appendChild(contact())
-content.appendChild(footer())
+updateDisplay();
